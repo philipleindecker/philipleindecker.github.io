@@ -4,7 +4,7 @@ title: MasterSite
 tools: [Website, Jekyll, Markdown]
 tags: [Website, Jekyll, Markdown]
 image: /assets/project-images/logos/master-site-logo.png
-description: An introduction to this personal Website.
+description: A quick overview of this personal website.
 ---
 
 ## Summary

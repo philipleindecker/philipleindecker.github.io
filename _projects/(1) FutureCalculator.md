@@ -4,7 +4,7 @@ title: FutureCalculator
 tools: [iOS-App, Mathematics, Swift]
 tags: [iOS-App, Mathematics, Swift]
 image: /assets/project-images/logos/future-calculator-logo.png
-description: This was my first iOS-App.
+description: The one and only calculator for iPhone and iPad - download on the App Store.
 ---
 
 ## Screenshots
@@ -43,6 +43,6 @@ Calculation History: See and use your latest results while continuing calculatin
 
 Have fun with calculating!
 
-<a href="https://itunes.apple.com/at/app/exashare/id997126599?mt=8"><img src="/assets/ios-images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
+<a href="https://geo.itunes.apple.com/us/app/futurecalculator/id997053533?mt=8" target="_blank"><img src="/assets/ios-images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
 
 <img src="/assets/project-images/logos/future-calculator-logo.png" alt="FutureCalculator" width="300"/>

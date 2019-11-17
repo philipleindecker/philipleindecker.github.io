@@ -4,13 +4,13 @@ description         : >-                               # >- means to ignore newl
                       Hello World!
 
 url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
-baseurl             : "/"                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+baseurl             : "/"                              # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
 repository          : philipleindecker/philipleindecker.github.io    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
 
 ### Author Info ###
 author:
   name              : Philip Leindecker
-  image             : assets/logo.jpg
+  image             : /assets/logo.jpg
 # behance           : your_username
 # dribbble          : your_username
   email             : philip.leindecker@gmail.com
@@ -52,7 +52,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
+      layout: "post"
 
 
 ### Exclude from processing ###
@@ -60,3 +60,4 @@ exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
+- articles

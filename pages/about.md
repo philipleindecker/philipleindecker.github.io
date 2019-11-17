@@ -7,16 +7,26 @@ weight: 5
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}**,<br>
+Hi my name is **{{ site.author.name }}**,<br>
 and I am currently a Master Student in Physics at ETH Zürich in Switzerland.
 
-<div class="row">
+<!---For detailed infromation see my [CV](**{{ site.data.resume_cv }}**).-->
+
+<!---<div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
-</div>
+</div>-->
 
 ## Education
 
 <div class="row">
-{% include about/timeline.html %}
+{% include about/timeline-education.html %}
 </div>
+
+<!---
+## Experience
+
+<div class="row">
+{% include about/timeline-experience.html %}
+</div>
+-->

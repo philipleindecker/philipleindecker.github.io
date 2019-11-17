@@ -1,0 +1,23 @@
+- title: MSc. Physics, ETH Zürich
+  from: 2019
+  to: present
+  location: Zürich, Switzerland
+  image: /assets/education-images/ETHSignet.png
+  radius: 5
+  description:
+
+- title: BSc. Physics, TU Vienna
+  from: 2016
+  to: 2019
+  location: Vienna, Austria
+  image: /assets/education-images/TUSignet.jpg
+  radius: 0
+  description: Bachelor Thesis - "Neural Networks in the field of Tribology"
+
+- title: Matura, Brucknergymnasium
+  from: 2009
+  to: 2016
+  location: Wels, Austria
+  image: /assets/education-images/BrucknerSignet.png
+  radius: 0
+  description: Final Thesis - "Energiespeicher der Zukunft"

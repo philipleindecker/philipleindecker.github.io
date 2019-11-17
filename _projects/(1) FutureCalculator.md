@@ -3,7 +3,7 @@ name: FutureCalculator
 title: FutureCalculator
 tools: [iOS-App, Mathematics, Swift]
 tags: [iOS-App, Mathematics, Swift]
-image: /assets/project-images/future-calculator-logo.png
+image: /assets/project-images/logos/future-calculator-logo.png
 description: This was my first iOS-App.
 ---
 
@@ -45,4 +45,4 @@ Have fun with calculating!
 
 <a href="https://itunes.apple.com/at/app/exashare/id997126599?mt=8"><img src="/assets/ios-images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
 
-<img src="/assets/project-images/future-calculator-logo.png" alt="FutureCalculator" width="300"/>
+<img src="/assets/project-images/logos/future-calculator-logo.png" alt="FutureCalculator" width="300"/>

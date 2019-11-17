@@ -25,21 +25,13 @@
        <h5 id="futurecalculator-name" class="card-title">Projects</h5>
        <p id="futurecalculator-desc" class="card-text">Here you find all my projects I have done so far. </p>
        <div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
-            <img src="/assets/project-images/future-calculator-logo.png" alt="FutureCalculator" style="width: 100px;height:100px;" />
-        </div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
-            <img src="/assets/project-images/exashare-logo.png" alt="Exashare" style="width: 70px;height:70px;" />
-        </div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
-            <img src="/assets/project-images/bachelor-thesis-logo.png" alt="Bachelor Thesis" style="width: 70px;height:70px;" />
-        </div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
-            <img src="/assets/project-images/master-site-logo.png" alt="MasterSite" style="width: 70px;height:70px;" />
-        </div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
-            <img src="/assets/project-images/free-style-logo.png" alt="FreeStyle" style="width: 70px;height:70px;"/>
-        </div>
+           {% for image in site.static_files %}
+               {% if image.path contains 'project-images/logos' %}
+                   <div style="width: 90px;height:90px;float:left;margin-left: 0px;">
+                       <img src="{{ image.path }}" style="width: 70px;height:70px;" />
+                   </div>
+               {% endif %}
+           {% endfor %}
        </div>
      </div>
    </a>
@@ -53,10 +45,10 @@
        <h5 id="futurecalculator-name" class="card-title">Studies</h5>
        <p id="futurecalculator-desc" class="card-text">In this section you will find an overview of my studies at TU Vienna and ETH Zürich</p>
        <div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
+        <div style="width: 90px;height:90px;float:left;margin-left: 0px;">
             <img src="/assets/education-images/ETHSignet.png" alt="ETH" style="width: 70px;height:70px;" />
         </div>
-        <div style="width: 100px;height:100px;float:left;margin-left: 0px;">
+        <div style="width: 90px;height:90px;float:left;margin-left: 0px;">
             <img src="/assets/education-images/TUSignet.jpg" alt="TU" style="width: 70px;height:70px;" />
         </div>
        </div>
@@ -70,17 +62,15 @@
    <a href="/books" class="project card text-dark">
      <div class="card-body">
        <h5 id="futurecalculator-name" class="card-title">Books</h5>
-       <p id="futurecalculator-desc" class="card-text">Finally, in this section you find a list of books I read or used in my studies.</p>
+       <p id="futurecalculator-desc" class="card-text">Finally, in this section you will find a list of books I have read or found usefull for my studies and projects.</p>
        <div>
-        <div style="height:80px;float:left;margin-left: 0px;">
-            <img src="/assets/books-images/six-easy-pieces.png" alt="six-easy-pieces" style="height:70px;" />
-        </div>
-        <div style="height:80px;float:left;margin-left: 5px;">
-            <img src="/assets/books-images/six-not-so-easy-pieces.png" alt="six-not-so-easy-pieces" style="height:70px;" />
-        </div>
-        <div style="height:80px;float:left;margin-left: 5px;">
-            <img src="/assets/books-images/theoretische-physik.png" alt="theoretische-physik" style="height:70px;" />
-        </div>
+           {% for image in site.static_files %}
+               {% if image.path contains 'books-images' %}
+                   <div style="height:80px;float:left;margin-left:3px;">
+                       <img src="{{ image.path }}" style="height:70px;" />
+                   </div>
+               {% endif %}
+           {% endfor %}
        </div>
      </div>
    </a>

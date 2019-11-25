@@ -9,10 +9,10 @@ description: The one and only calculator for iPhone and iPad - download on the A
 
 ## Screenshots
 
-<div style="content: '';clear: both;display: table;">
-    <img src="/assets/project-images/future-calculator/IMG_0043.png" alt="FutureCalculator" style="float: left;height: 350px;"/>
-    <img src="/assets/project-images/future-calculator/IMG_0044.png" alt="FutureCalculator" style="float: left;height: 350px;margin-left: 30px;"/>
-    <img src="/assets/project-images/future-calculator/IMG_0045.png" alt="FutureCalculator" style="float: left;height: 180px;margin-left: 30px;margin-top:100px;"/>
+<div style="clear: both;display: table;">
+    <img src="/assets/project-images/future-calculator/img1.png" alt="FutureCalculator" style="float: left;height: 350px;"/>
+    <img src="/assets/project-images/future-calculator/img2.png" alt="FutureCalculator" style="float: left;height: 350px;margin-left: 30px;"/>
+    <img src="/assets/project-images/future-calculator/img3.png" alt="FutureCalculator" style="float: left;height: 180px;margin-left: 30px;margin-top:100px;"/>
 </div>
 
 

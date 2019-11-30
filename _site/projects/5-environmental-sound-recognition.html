@@ -98,13 +98,60 @@
 
 </p>
 
-<p><img src="/assets/project-images/logos/environmental-sound-recognition-logo.png" alt="Image" width="300" /></p>
-
 <h2 id="summary">Summary</h2>
 
-<p><a href="https://www.tensorflow.org/hub/tutorials/image_retraining">Tutorial Tensorflow</a>
-<a href="https://github.com/jscalo/tempi-fft">TempiFFT</a></p>
+<p><img src="/assets/project-images/environmental-sound-recognition/boiling-water-1600x800.jpg" alt="Image" width="1000" /></p>
 
+<h3 id="spectrogram">Spectrogram</h3>
+
+<p><a href="https://github.com/jscalo/tempi-fft">TempiFFT</a> allows to generate real time spectrograms from the mircophone input in iOS.</p>
+
+<p>It uses FastFourierTransformation</p>
+
+<p><a href="https://www.codecogs.com/eqnedit.php?latex=\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" title="\Large f_m =\sum_{k=0}^{2n-1}x_k e^{-\frac{2\pi i}{2n}mk}\quad m=0,...,2n-1" /></a></p>
+
+<h3 id="neural-network">Neural Network</h3>
+
+<p>The Neural Network is bases on <a href="https://apple.github.io/turicreate/docs/userguide/sound_classifier/">Turicreate</a>, which is a library provided by Apple.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">turicreate</span> <span class="k">as</span> <span class="n">tc</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">basename</span>
+
+<span class="c1"># Load the audio data and meta data.
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">tc</span><span class="o">.</span><span class="n">load_audio</span><span class="p">(</span><span class="s">'./ESC-50/audio/'</span><span class="p">)</span>
+<span class="n">meta_data</span> <span class="o">=</span> <span class="n">tc</span><span class="o">.</span><span class="n">SFrame</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'./ESC-50/meta/esc50.csv'</span><span class="p">)</span>
+
+<span class="c1"># Join the audio data and the meta data.
+</span><span class="n">data</span><span class="p">[</span><span class="s">'filename'</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">'path'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">basename</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">meta_data</span><span class="p">)</span>
+
+<span class="c1"># Drop all records which are not part of the ESC-10.
+</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="s">'True'</span><span class="p">,</span> <span class="s">'esc10'</span><span class="p">)</span>
+
+<span class="c1"># Make a train-test split, just use the first fold as our test set.
+</span><span class="n">test_set</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'fold'</span><span class="p">)</span>
+<span class="n">train_set</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'fold'</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># Create the model.
+</span><span class="n">model</span> <span class="o">=</span> <span class="n">tc</span><span class="o">.</span><span class="n">sound_classifier</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">train_set</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s">'category'</span><span class="p">,</span> <span class="n">feature</span><span class="o">=</span><span class="s">'audio'</span><span class="p">)</span>
+
+<span class="c1"># Generate an SArray of predictions from the test set.
+</span><span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span>
+
+<span class="c1"># Evaluate the model and print the results
+</span><span class="n">metrics</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span>
+
+<span class="c1"># Save the model for later use in Turi Create
+</span><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">'mymodel.model'</span><span class="p">)</span>
+
+<span class="c1"># Export for use in Core ML
+</span><span class="n">model</span><span class="o">.</span><span class="n">export_coreml</span><span class="p">(</span><span class="s">'mymodel.mlmodel'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>In order to distribute the app see <a href="https://github.com/apple/turicreate/issues/2050">Turicreate Issue</a></p>
+
+<p><img src="/assets/project-images/logos/environmental-sound-recognition-logo.png" alt="Image" width="300" /></p>
 
 
 <!--<footer>

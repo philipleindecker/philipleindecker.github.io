@@ -21,7 +21,7 @@ As a proof of conecpt, we want to detect the sound of boiling water in the kitch
 
 ### Data 
 The data consists of two sets: 
-- Random kitchen noise in various environments bevore the water is boiling
+- Random kitchen noise in various environments before the water is boiling
 - Sound of boiling water with and without noise
 
 ### Spectrogram 

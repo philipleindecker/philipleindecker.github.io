@@ -45,4 +45,4 @@ Have fun with calculating!
 
 <a href="https://geo.itunes.apple.com/us/app/futurecalculator/id997053533?mt=8" target="_blank"><img src="/assets/ios-images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
 
-<img src="/assets/project-images/logos/future-calculator-logo.png" alt="FutureCalculator" width="300"/>
+<img src="/assets/project-images/logos/future-calculator-logo.png" alt="FutureCalculator" width="200"/>

@@ -21,4 +21,4 @@ The Website is currently hosted on [bplaced](https://www.bplaced.net) and is mai
 
 
 
-<img src="/assets/project-images/logos/exashare-logo.png" alt="Exashare" width="300"/>
+<img src="/assets/project-images/logos/exashare-logo.png" alt="Exashare" width="200"/>

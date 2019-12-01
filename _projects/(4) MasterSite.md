@@ -18,4 +18,6 @@ This website was made with [Jekyll](https://jekyllrb.com) using the template [po
 For a quick reference in Markdown see [Markdown Cheatsheet
 ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+The Website uses [Google Analytics](https://analytics.google.com/analytics/web) for traffic tracking.
+
 <img src="/assets/project-images/logos/master-site-logo.png" alt="Image" width="200"/>

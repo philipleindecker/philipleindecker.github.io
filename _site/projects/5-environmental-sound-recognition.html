@@ -88,7 +88,7 @@
   <b>
   
   
-    2 mins read time
+    3 mins read time
   
   </b>
 
@@ -122,12 +122,20 @@ As a proof of conecpt, we want to detect the sound of boiling water in the kitch
 
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
-  <li><a href="#spectrogram">Spectrogram</a></li>
+  <li><a href="#data">Data</a></li>
   <li><a href="#neural-network">Neural Network</a></li>
-  <li><a href="#third-example">Result</a></li>
+  <li><a href="#spectrogram">Spectrogram</a></li>
+  <li><a href="#result">Result</a></li>
 </ol>
 
 <p><img src="/assets/project-images/environmental-sound-recognition/boiling-water-1600x800.jpg" alt="Image" width="1000" /></p>
+
+<h3 id="data">Data</h3>
+<p>The data consists of two sets:</p>
+<ul>
+  <li>Random kitchen noise in various environments bevore the water is boiling</li>
+  <li>Sound of boiling water with and without noise</li>
+</ul>
 
 <h3 id="spectrogram">Spectrogram</h3>
 
@@ -138,9 +146,15 @@ As a proof of conecpt, we want to detect the sound of boiling water in the kitch
 <p>For discrete values (like sound data), the Discrete Fourier Transformation (DFT) is given by
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" title="\Large f_m =\sum_{k=0}^{2n-1}x_k e^{-\frac{2\pi i}{2n}mk}\quad m=0,...,2n-1" /></a></p>
 
+<p><img src="/assets/project-images/environmental-sound-recognition/spectrum.png" alt="Image" width="800" /></p>
+
 <h3 id="neural-network">Neural Network</h3>
 
-<p>The Neural Network is bases on <a href="https://apple.github.io/turicreate/docs/userguide/sound_classifier/">Turicreate</a>, which is a library provided by Apple.</p>
+<p>The Neural Network is based on <a href="https://apple.github.io/turicreate/docs/userguide/sound_classifier/">Turicreate</a>, which is a library provided by Apple to do various machine learning tasks.</p>
+
+<p>In this case we are using the so called <em>Sound Classifier</em>. Given a sound, the goal of the Sound Classifier is to assign it to one of a pre-determined number of labels, such as baby crying, siren, or dog barking. This Sound Classifier is not intended to be used for speech recognition.</p>
+
+<h4 id="example-code">Example Code</h4>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">turicreate</span> <span class="k">as</span> <span class="n">tc</span>
 <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">basename</span>
@@ -177,9 +191,16 @@ As a proof of conecpt, we want to detect the sound of boiling water in the kitch
 </span><span class="n">model</span><span class="o">.</span><span class="n">export_coreml</span><span class="p">(</span><span class="s">'mymodel.mlmodel'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>In order to distribute the app see <a href="https://github.com/apple/turicreate/issues/2050">Turicreate Issue</a></p>
+<p>In order use Turicreate in iOS, one has to do the steps described here <a href="https://apple.github.io/turicreate/docs/userguide/sound_classifier/export-coreml.html">Deployment to Core ML</a>.</p>
 
-<p><img src="/assets/project-images/logos/auto-cooking-logo.png" alt="Image" width="200" /></p>
+<p>In order to distribute the app, one has to package the dynamic Library of Turicreate into a Framework. Watch out for the isse <a href="https://github.com/apple/turicreate/issues/2050">Turicreate Issue</a>.</p>
+
+<h3 id="result">Result</h3>
+<p>The result was farily good and the trained network could detect the sound of boiling water in various different environments.</p>
+
+<p>The resulting App AutoCooking will soon be available for downloading.
+<img src="/assets/project-images/logos/auto-cooking-logo.png" alt="Image" width="200" /></p>
+<center>AutoCooking</center>
 
 <p><img src="/assets/project-images/logos/environmental-sound-recognition-logo.png" alt="Image" width="200" /></p>
 

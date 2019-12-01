@@ -12,11 +12,17 @@ The aim of this project was to generate a neural network which recognizes enviro
 As a proof of conecpt, we want to detect the sound of boiling water in the kitchen.
 
 ## Table of Contents
-1. [Spectrogram](#spectrogram)
+1. [Data](#data)
 2. [Neural Network](#neural-network)
-3. [Result](#third-example)
+1. [Spectrogram](#spectrogram)
+3. [Result](#result)
 
 <img src="/assets/project-images/environmental-sound-recognition/boiling-water-1600x800.jpg" alt="Image" width="1000"/>
+
+### Data 
+The data consists of two sets: 
+- Random kitchen noise in various environments bevore the water is boiling
+- Sound of boiling water with and without noise
 
 ### Spectrogram 
 
@@ -27,9 +33,15 @@ It uses Fast Fourier Transform (short FFT), which is a method for deconstructing
 For discrete values (like sound data), the Discrete Fourier Transformation (DFT) is given by
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Large&space;f_m&space;=\sum_{k=0}^{2n-1}x_k&space;e^{-\frac{2\pi&space;i}{2n}mk}\quad&space;m=0,...,2n-1" title="\Large f_m =\sum_{k=0}^{2n-1}x_k e^{-\frac{2\pi i}{2n}mk}\quad m=0,...,2n-1" /></a>
 
+<img src="/assets/project-images/environmental-sound-recognition/spectrum.png" alt="Image" width="800"/>
+
 ### Neural Network
 
-The Neural Network is bases on [Turicreate](https://apple.github.io/turicreate/docs/userguide/sound_classifier/), which is a library provided by Apple.
+The Neural Network is based on [Turicreate](https://apple.github.io/turicreate/docs/userguide/sound_classifier/), which is a library provided by Apple to do various machine learning tasks. 
+
+In this case we are using the so called *Sound Classifier*. Given a sound, the goal of the Sound Classifier is to assign it to one of a pre-determined number of labels, such as baby crying, siren, or dog barking. This Sound Classifier is not intended to be used for speech recognition.
+
+#### Example Code
 
 ```python
 import turicreate as tc
@@ -67,9 +79,15 @@ model.save('mymodel.model')
 model.export_coreml('mymodel.mlmodel')
 ```
 
-In order to distribute the app see [Turicreate Issue](https://github.com/apple/turicreate/issues/2050)
+In order use Turicreate in iOS, one has to do the steps described here [Deployment to Core ML](https://apple.github.io/turicreate/docs/userguide/sound_classifier/export-coreml.html).
 
+In order to distribute the app, one has to package the dynamic Library of Turicreate into a Framework. Watch out for the isse [Turicreate Issue](https://github.com/apple/turicreate/issues/2050).
 
+### Result
+The result was farily good and the trained network could detect the sound of boiling water in various different environments. 
+
+The resulting App AutoCooking will soon be available for downloading.
 <img src="/assets/project-images/logos/auto-cooking-logo.png" alt="Image" width="200"/>
+<center>AutoCooking</center>
 
 <img src="/assets/project-images/logos/environmental-sound-recognition-logo.png" alt="Image" width="200"/>

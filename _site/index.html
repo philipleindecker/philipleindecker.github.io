@@ -36,7 +36,17 @@
 <body class="d-flex flex-column h-100">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153592701-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153592701-1');
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-light">
 
   <a class="navbar-brand" href="//"><h5><b>Philip Leindecker</b></h5></a>
 
@@ -80,6 +90,7 @@
   </div>
 
 </nav>
+
   <!--<div class="row justify-content-center align-items-center p-4">
   <div class="col-lg-4 col-md-6 text-center mt-4">
 
@@ -107,8 +118,6 @@
        <h5 id="futurecalculator-name" class="card-title">Projects</h5>
        <p id="futurecalculator-desc" class="card-text">Here you find all my projects I have done so far. </p>
        <div>
-           
-               
            
                
            
@@ -196,6 +205,8 @@
                    <div style="width: 90px;height:90px;float:left;margin-left: 0px;">
                        <img src="/assets/project-images/logos/master-site-logo.png" style="width: 70px;height:70px;" />
                    </div>
+               
+           
                
            
        </div>
@@ -431,6 +442,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

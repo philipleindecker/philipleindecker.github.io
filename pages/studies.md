@@ -14,6 +14,12 @@ Here you will find an overview of my courses at TU Vienna and ETH Zürich.
 ##### Core courses
 General Relativity, Quantum Optics, Phenomenology of Particle Physics I
 
+##### Elective courses
+Computational Quantum Physics, Physics Against Cancer: The Physics of Imaging and Treating Cancer, From Entrepreneurial Thinking to Market Relevance - How Startups Scale, Data Science in Techno-Socio-Economic Systems
+
+##### Teaching Assistant
+Analysis 2
+
 ## TU Wien
 
 ##### Fundamental of Physics

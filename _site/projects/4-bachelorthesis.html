@@ -36,7 +36,17 @@
 <body class="d-flex flex-column h-100">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153592701-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153592701-1');
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-light">
 
   <a class="navbar-brand" href="//"><h5><b>Philip Leindecker</b></h5></a>
 
@@ -80,8 +90,9 @@
   </div>
 
 </nav>
+
   <div class="col-lg-10 mx-auto mt-5 article">
-  <h1><b>AutoCooking</b></h1>
+  <h1><b>Bachelor Thesis</b></h1>
 
 <p class="article-metadata text-muted">
    -  
@@ -97,47 +108,43 @@
   
     Tags: 
     
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#app">-->
+    <!--<a class="text-decoration-none no-underline" href="/articles/tags#tu-vienna">-->
     <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">App</span>
+      <span class="tag badge badge-pill text-primary border border-primary">TU Vienna</span>
     </a>
     
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#neuralnet">-->
+    <!--<a class="text-decoration-none no-underline" href="/articles/tags#neural-nets">-->
     <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">NeuralNet</span>
+      <span class="tag badge badge-pill text-primary border border-primary">Neural Nets</span>
     </a>
     
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#swift">-->
+    <!--<a class="text-decoration-none no-underline" href="/articles/tags#python">-->
     <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">Swift</span>
+      <span class="tag badge badge-pill text-primary border border-primary">Python</span>
     </a>
     
   
 
 </p>
 
-<h2 id="screenshots">Screenshots</h2>
+<h2 id="general-infos">General Infos</h2>
 
-<div style="clear: both;display: table;">
-    <img src="/assets/project-images/auto-cooking/img1.png" alt="AutoCooking" style="float: left;height: 350px;" />
-    <img src="/assets/project-images/auto-cooking/img2.png" alt="AutoCooking" style="float: left;height: 350px;margin-left: 30px;" />
-    <img src="/assets/project-images/auto-cooking/img3.png" alt="AutoCooking" style="float: left;height: 350px;margin-left: 30px;" />
-</div>
+<p>This Bachelor thesis was carried out at <strong>Technical University of Vienna</strong> at the <strong>Institude of Applied Physics</strong>.</p>
 
-<h2 id="description">Description</h2>
-<p>AutoCooking allows you to automatically detect, when water in a pod is boiling and notifies you with an accustic alarm.</p>
+<p><strong>Title</strong>:    Pattern recognition in acoustic emission using neural networks<br />
+<strong>Supervised by</strong>:     Ao.Univ.Prof. Dipl.-Ing. Dr.tech. Martin Gröschl<br />
+<strong>Handed in</strong>:     Vienna, June 2019</p>
 
-<h3 id="usage">Usage</h3>
-<p>Place the iPhone near the pod (30cm radius) and click on Start. When the water is boiling, the phone will indicate this with an accoustic alarm.</p>
+<h2 id="abstract">Abstract</h2>
 
-<p>Additional sound or noise typical for an kitchen environment is usually ignored by the trained neural network. Boling the water with or without a pod lid should also not affect the detection.</p>
+<p>Interpreting and analysing data from physical experiments is a fundamental part of all applied natural sciences in order to validate new theories or eventually proof them wrong. Neuronal networks - with all their variations - can help to find correlations in big sets of data, which otherwise might have never been discovered due to the size and complexity of the given dataset. The goal of this thesis is, to use neural networks in the field of tribology to detect and categorise specific events in a quasi-continuous acoustic signal.</p>
 
-<p><img src="/assets/project-images/logos/auto-cooking-logo.png" alt="AutoCooking" width="200" /></p>
+<p><img src="/assets/project-images/logos/bachelor-thesis-logo.png" alt="Bachelor Thesis" width="200" /></p>
 
 
 <!--<footer>
   This Article is <b>open source</b>. Noticed a typo? </br>
-  Or something unclear? Improve it on <a href="https://github.com/philipleindecker/philipleindecker.github.io/edit/gh-pages/_projects/(6)%20AutoCooking.md">GitHub</a>.
+  Or something unclear? Improve it on <a href="https://github.com/philipleindecker/philipleindecker.github.io/edit/gh-pages/_projects/(4)%20BachelorThesis.md">GitHub</a>.
 </footer>-->
 
 </div>
@@ -232,6 +239,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

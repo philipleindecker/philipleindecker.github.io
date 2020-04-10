@@ -36,7 +36,17 @@
 <body class="d-flex flex-column h-100">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153592701-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153592701-1');
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-light">
 
   <a class="navbar-brand" href="//"><h5><b>Philip Leindecker</b></h5></a>
 
@@ -80,8 +90,9 @@
   </div>
 
 </nav>
+
   <div class="col-lg-10 mx-auto mt-5 article">
-  <h1><b>Exashare</b></h1>
+  <h1><b>MasterSite</b></h1>
 
 <p class="article-metadata text-muted">
    -  
@@ -102,43 +113,54 @@
       <span class="tag badge badge-pill text-primary border border-primary">Website</span>
     </a>
     
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#school">-->
+    <!--<a class="text-decoration-none no-underline" href="/articles/tags#jekyll">-->
     <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">School</span>
+      <span class="tag badge badge-pill text-primary border border-primary">Jekyll</span>
     </a>
     
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#html">-->
+    <!--<a class="text-decoration-none no-underline" href="/articles/tags#markdown">-->
     <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">HTML</span>
-    </a>
-    
-    <!--<a class="text-decoration-none no-underline" href="/articles/tags#css">-->
-    <a class="text-decoration-none no-underline">
-      <span class="tag badge badge-pill text-primary border border-primary">CSS</span>
+      <span class="tag badge badge-pill text-primary border border-primary">Markdown</span>
     </a>
     
   
 
 </p>
 
-<p>Visit the Website: <a href="http://exashare.at">Exashare</a></p>
-
 <h2 id="overview">Overview</h2>
 
-<p>Exashare is a online file-sharing platform for students to exchange school related documents such as: Presentations, Summaries, Transcripts, Exams, … and many more.</p>
-
-<p>Accounts on the platform are limited to students with their official school email, so that only students at registered schools can upload and download documents on the website.</p>
+<p>The intend of this website is to present my projects and to give an overview of my studies at ETH Zürich and TU Vienna.</p>
 
 <h2 id="technical-summary">Technical Summary</h2>
 
-<p>The Website is currently hosted on <a href="https://www.bplaced.net">bplaced</a> and is mainly written in following  languages: <span class="codeTag">HTML</span>, <span class="codeTag">CSS</span>, <span class="codeTag">JavaScript</span>, <span class="codeTag">PHP</span>, <span class="codeTag">mySQL</span>.</p>
+<p>This website was made with <a href="https://jekyllrb.com">Jekyll</a> using the template <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and is hosted with <a href="https://pages.github.com">GitHub Pages</a>.</p>
 
-<p><img src="/assets/project-images/logos/exashare-logo.png" alt="Exashare" width="200" /></p>
+<blockquote>
+  <p>“Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it churns through layouts to create a static website.”</p>
+
+  <p>–<cite>Jekyll</cite></p>
+</blockquote>
+
+<p>For a quick reference in Markdown see <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet
+</a>.</p>
+
+<p>For a quick reference in Git see <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheatsheet
+</a>.</p>
+
+<p>The Website uses <a href="https://analytics.google.com/analytics/web">Google Analytics</a> for traffic tracking.</p>
+
+<p>Quick Start for Mac to run a local Jekyll Website:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
+bundle exec jekyll serve
+</code></pre></div></div>
+
+<p><img src="/assets/project-images/master-site/worldwide.png" alt="Image" width="200" /></p>
 
 
 <!--<footer>
   This Article is <b>open source</b>. Noticed a typo? </br>
-  Or something unclear? Improve it on <a href="https://github.com/philipleindecker/philipleindecker.github.io/edit/gh-pages/_projects/(2)%20Exashare.md">GitHub</a>.
+  Or something unclear? Improve it on <a href="https://github.com/philipleindecker/philipleindecker.github.io/edit/gh-pages/_projects/(2)%20MasterSite.md">GitHub</a>.
 </footer>-->
 
 </div>
@@ -233,6 +255,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

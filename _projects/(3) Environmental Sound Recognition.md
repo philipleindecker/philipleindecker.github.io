@@ -86,8 +86,8 @@ In order to distribute the app, one has to package the dynamic Library of Turicr
 ### Result
 The result was farily good and the trained network could detect the sound of boiling water in various different environments. 
 
-The resulting App AutoCooking will soon be available for downloading.
+The resulting App 212° F will soon be available for downloading.
 <img src="/assets/project-images/logos/auto-cooking-logo.png" alt="Image" width="200"/>
-<center>AutoCooking</center>
+<center> 212° F</center>
 
 <img src="/assets/project-images/logos/environmental-sound-recognition-logo.png" alt="Image" width="200"/>

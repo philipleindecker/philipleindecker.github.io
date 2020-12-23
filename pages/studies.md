@@ -7,20 +7,24 @@ weight: 2
 
 # **My Studies**
 
-Here you will find an overview of my courses at TU Vienna and ETH Zürich.
+Here you will find an overview of my courses at ETH Zurich and TU Vienna.
 
 ## ETH Zürich
 
 ##### Core courses
-General Relativity, Quantum Optics, Phenomenology of Particle Physics I
+General Relativity, Quantum Optics, Phenomenology of Particle Physics I, Statistical Physics
 
 ___
 ##### Elective courses
-Computational Quantum Physics, Physics Against Cancer: The Physics of Imaging and Treating Cancer, From Entrepreneurial Thinking to Market Relevance - How Startups Scale, Data Science in Techno-Socio-Economic Systems
+Computational Quantum Physics, Physics Against Cancer: The Physics of Imaging and Treating Cancer, From Entrepreneurial Thinking to Market Relevance - How Startups Scale, Data Science in Techno-Socio-Economic Systems, Superconductivity
+
+___
+##### Semester Project
+’Fast Digital Notch Filter on a Microcontroller’ in Prof. Tilman Esslinger’s Quantum Optics Group at ETHZ
 
 ___
 ##### Teaching Assistant
-Analysis 2
+Analysis II
 
 ## TU Wien
 

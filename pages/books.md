@@ -9,31 +9,41 @@ weight: 3
 
 Below you will find a list of books I have read or found usefull for my studies and projects. 
 
-## Physics Books
-Some books about physics.
-
+## Master
+A selection of books I used during my Master studies at ETHZ.
 
 <div style="content: '';clear: both;display: table;">
     <div style="float:left;">
-    <img src="/assets/books-images/six-easy-pieces.png" style="height:200px;margin-top: 0px;"/>
+    <img src="/assets/books-images/quantum-optics.jpg"  style="height:200px;margin-top: 0px;"/>
     </div>
     <div style="float:left;margin-left: 20px;">
-        <h3>Six Easy Pieces</h3>
-        <h5>Richard P. Feynman</h5>
+        <h3>Quantum Optics</h3>
+        <h5>Marlan O. Scully and M. Suhail Zubairy</h5>
     </div>
 </div>
+
 <div style="content: '';clear: both;display: table;">
     <div style="float:left;">
-    <img src="/assets/books-images/six-not-so-easy-pieces.png"  style="height:200px;margin-top: 0px;"/>
+    <img src="/assets/books-images/quantum-mechanics.jpeg"  style="height:200px;margin-top: 0px;"/>
     </div>
     <div style="float:left;margin-left: 20px;">
-        <h3>Six NOT-SO Easy Pieces</h3>
-        <h5>Richard P. Feynman</h5>
+        <h3>Quantum Mechanics</h3>
+        <h5>Claude Cohen-Tannoudji, Bernard Diu and Franck Laloë</h5>
+    </div>
+</div>
+
+<div style="content: '';clear: both;display: table;">
+    <div style="float:left;">
+    <img src="/assets/books-images/exploring-the-quantum.jpg"  style="height:200px;margin-top: 0px;"/>
+    </div>
+    <div style="float:left;margin-left: 20px;">
+        <h3>Exploring the Quantum</h3>
+        <h5>Serge Haroche and Jean-Michel Raimond</h5>
     </div>
 </div>
 
 ## Bachelor
-Books I used during my Bachelor at TU Vienna.
+A selection of books I used during my Bachelor studies at TU Vienna.
 
 
 <div style="content: '';clear: both;display: table;">
@@ -64,6 +74,29 @@ Books I used during my Bachelor at TU Vienna.
     <div style="float:left;margin-left: 20px;">
         <h3>Deep Learning</h3>
         <h5>Goodfellow</h5>
+    </div>
+</div>
+
+## Physics Books
+Some books about physics.
+
+
+<div style="content: '';clear: both;display: table;">
+    <div style="float:left;">
+    <img src="/assets/books-images/six-easy-pieces.png" style="height:200px;margin-top: 0px;"/>
+    </div>
+    <div style="float:left;margin-left: 20px;">
+        <h3>Six Easy Pieces</h3>
+        <h5>Richard P. Feynman</h5>
+    </div>
+</div>
+<div style="content: '';clear: both;display: table;">
+    <div style="float:left;">
+    <img src="/assets/books-images/six-not-so-easy-pieces.png"  style="height:200px;margin-top: 0px;"/>
+    </div>
+    <div style="float:left;margin-left: 20px;">
+        <h3>Six NOT-SO Easy Pieces</h3>
+        <h5>Richard P. Feynman</h5>
     </div>
 </div>
 

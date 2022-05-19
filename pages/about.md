@@ -8,7 +8,7 @@ weight: 5
 # **About Me**
 
 Hi my name is **{{ site.author.name }}**,<br>
-and I am currently a Master Student in Physics at ETH Zürich in Switzerland.
+and I am currently a PhD Student in Physics at ETH Zürich in Switzerland.
 
 For detailed infromation see my [CV](/assets/cv/resume_cv.pdf).
 
